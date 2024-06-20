@@ -1,0 +1,170 @@
+.CityDetail {
+  width: 100%;
+  padding: 4rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4rem;
+  background-color: var(--dark-vblue);
+  color: var(--text-color);
+}
+
+.backBtn {
+  cursor: pointer;
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  background-color: var(--dark-blue);
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.backIcon {
+  transition: all 0.3s;
+}
+
+.backBtn:hover .backIcon {
+  transform: rotate(360deg);
+}
+.backBtn:hover {
+  transform: scale(1.1);
+}
+
+.countryDeatilBox {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8rem;
+}
+
+.imgArea {
+  flex: 1.5 0;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+  flex: 3;
+}
+
+.infoBox > h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.detailBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  width: 100%;
+}
+.borderCountries {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderCountries > h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.borderCountriesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.borderStyle {
+  padding: 0.5rem 0.8rem;
+  color: var(--text-color);
+  background-color: var(--dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+.borderStyle:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.infoLabel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.infoLabel > h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+.infoLabel > p {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.infoLabel > a {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.8;
+  color: var(--text-color);
+  text-decoration: underline !important;
+}
+.labelIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.detailBox1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+}
+.detailBox2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .countryDeatilBox {
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+  }
+  .infoBox {
+    width: 100%;
+  }
+  .detailBox {
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+  }
+}

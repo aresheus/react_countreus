@@ -1,0 +1,50 @@
+.filter {
+  height: 60px;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: thin solid rgba(0, 0, 0, 0.137);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.filterByRegion {
+  appearance: none;
+  padding-inline: 1rem;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.option {
+  background-color: var(--dark-blue);
+}
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  background-color: var(--dark-blue);
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.iconContainer .ddIcon {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .filter {
+    height: 40px;
+  }
+}

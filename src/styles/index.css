@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+
+  --dark-blue: hsl(0, 0%, 98%);
+  --dark-vblue: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --dark-blue: hsl(209, 23%, 22%);
+  --dark-vblue: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: hsl(209, 23%, 22%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 10px !important;
+  }
+}

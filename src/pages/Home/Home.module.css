@@ -1,0 +1,23 @@
+.home {
+  padding: 4rem 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--dark-vblue);
+}
+
+.searchA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .searchA {
+    gap: 3rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+}
